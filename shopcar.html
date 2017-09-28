@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>购物车</title>
+	<script type="text/javascript" src="./js/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/shopcar.js"></script>
+	<script type="text/javascript" src="./js/log.js"></script>
+	<link rel="stylesheet" href="./css/shopcar.css">
+	<link rel="stylesheet" href="./css/log.css">
+</head>
+<body>
+	<!-- https://cart.jd.com/cart.action#none -->
+	<!-- 头部 -->
+	<div id="header">
+		<div>
+			<div href="#">
+				<span></span>
+				北京
+				<div>
+					<ul class="beijing">
+						<li>
+							<a href="#">北京</a>
+							<a href="#">山西</a>
+							<a href="#">内蒙古</a>
+							<a href="#">福建</a>
+							<a href="#">江西</a>
+							<a href="#">西藏</a>
+							<a href="#">新疆</a>
+						</li>
+						<li>
+							<a href="#">上海</a>
+							<a href="#">河南</a>
+							<a href="#">江苏</a>
+							<a href="#">湖北</a>
+							<a href="#">四川</a>
+							<a href="#">陕西</a>
+							<a href="#">港澳</a>
+						</li>
+						<li>
+							<a href="#">天津</a>
+							<a href="#">辽宁</a>
+							<a href="#">山东</a>
+							<a href="#">湖南</a>
+							<a href="#">海南</a>
+							<a href="#">甘肃</a>
+							<a href="#">台湾</a>
+						</li>
+						<li>
+							<a href="#">重庆</a>
+							<a href="#">吉林</a>
+							<a href="#">安徽</a>
+							<a href="#">广东</a>
+							<a href="#">贵州</a>
+							<a href="#">青海</a>
+							<a href="#">钓鱼岛</a>
+						</li>
+						<li>
+							<a href="#">河北</a>
+							<a href="#">黑龙江</a>
+							<a href="#">浙江</a>
+							<a href="#">广西</a>
+							<a href="#">云南</a>
+							<a href="#">宁夏</a>
+							<a href="#">海外</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<ul class="headerright">
+				<li><a href="#">你好，请登录</a>&nbsp;&nbsp;<a href="#">免费注册</a></li>
+				<li><a href="#">我的订单</a></li>
+				<li class="headerright-1">
+				    <a href="#">我的京东&nbsp;∨<span></span></a>
+				    <div class="headerright-1-1">
+				    	<div class="headerright-1-1-1">
+				    		<div><a href="#">待处理订单</a></div>
+				    		<div><a href="#">消息</a></div>
+				    		<div><a href="#">返修退换货</a></div>
+				    		<div><a href="#">我的问答</a></div>
+				    		<div><a href="#">降价商品</a></div>
+				    		<div><a href="#">我的关注</a></div>
+				    	</div>
+				    	<div class="headerright-1-1-2">
+				    		<div><a href="#">我的京豆</a></div>
+				    		<div><a href="#">我的优惠券</a></div>
+				    		<div><a href="#">我的白条</a></div>
+				    		<div><a href="#">我的理财</a></div>
+				    	</div>
+				    </div>
+				</li>
+				<li><a href="#">京东会员</a></li>
+				<li><a href="#">企业采购</a></li>
+				<li class="headerright-2">
+				    <a href="#">客服服务&nbsp;∨<span></span></a>
+					<div class="headerright-2-1">
+						<p>客户</p>
+						<div><a href="#">帮助中心</a></div>
+						<div><a href="#">售后服务</a></div>
+						<div><a href="#">在线客服</a></div>
+						<div><a href="#">意见建议</a></div>
+						<div><a href="#">电话客服</a></div>
+						<div><a href="#">客服邮箱</a></div>
+						<div><a href="#">金融咨询</a></div>
+						<div><a href="#">售全球客服</a></div>
+						<p>商户</p>
+						<div><a href="#">合作招商</a></div>
+						<div><a href="#">京东商学院</a></div>
+						<div><a href="#">商家后台</a></div>
+						<div><a href="#">京麦工作台</a></div>
+						<div><a href="#">商家帮助</a></div>
+						<div><a href="#">规则平台</a></div>
+					</div>
+				</li>
+				<li class="headerright-3">
+				    <a href="#">网站导航&nbsp;∨<span></span></a>
+				    <div class="headerright-3-1">
+				    	<div>
+				    		<p>特色主题</p>
+				    		<div><a href="#">京东试用</a></div>
+				    		<div><a href="#">京东金融</a></div>
+				    		<div><a href="#">全球售</a></div>
+				    		<div><a href="#">国际站</a></div>
+				    		<div><a href="#">京东会员</a></div>
+				    		<div><a href="#">京东预售</a></div>
+				    		<div><a href="#">买什么</a></div>
+				    		<div><a href="#">俄语站</a></div>
+				    		<div><a href="#">装机大师</a></div>
+				    		<div><a href="#">0元评测</a></div>
+				    		<div><a href="#">定期送</a></div>
+				    		<div><a href="#">港澳售</a></div>
+				    		<div><a href="#">优惠券</a></div>
+				    		<div><a href="#">秒杀</a></div>
+				    		<div><a href="#">闪购</a></div>
+				    		<div><a href="#">印尼站</a></div>
+				    		<div><a href="#">企业金融服务</a></div>
+				    		<div><a href="#">In货推荐</a></div>
+				    		<div><a href="#">礼品购</a></div>
+				    		<div><a href="#">出海招商</a></div>
+				    	</div>
+				    	<div>
+				    		<p>行业频道</p>
+				    		<div><a href="#">手机</a></div>
+				    		<div><a href="#">智能数码</a></div>
+				    		<div><a href="#">玩3C</a></div>
+				    		<div><a href="#">电脑办公</a></div>
+				    		<div><a href="#">家用电器</a></div>
+				    		<div><a href="#">京东智能</a></div>
+				    		<div><a href="#">服装城</a></div>
+				    		<div><a href="#">美妆馆</a></div>
+				    		<div><a href="#">家装城</a></div>
+				    		<div><a href="#">母婴</a></div>
+				    		<div><a href="#">食品</a></div>
+				    		<div><a href="#">运动户外</a></div>
+				    		<div><a href="#">农资频道</a></div>
+				    		<div><a href="#">整车</a></div>
+				    		<div><a href="#">图书</a></div>
+				    	</div>
+				    	<div>
+				    		<p>生活服务</p>
+				    		<div><a href="#">京东众筹</a></div>
+				    		<div><a href="#">白条</a></div>
+				    		<div><a href="#">京东金融App</a></div>
+				    		<div><a href="#">京东小金库</a></div>
+				    		<div><a href="#">理财</a></div>
+				    		<div><a href="#">京东微联</a></div>
+				    		<div><a href="#">话费</a></div>
+				    		<div><a href="#">水电煤</a></div>
+				    		<div><a href="#">彩票</a></div>
+				    		<div><a href="#">旅行</a></div>
+				    		<div><a href="#">机票酒店</a></div>
+				    		<div><a href="#">电影票</a></div>
+				    		<div><a href="#">京东到家</a></div>
+				    		<div><a href="#">京东众测</a></div>
+				    		<div><a href="#">游戏</a></div>
+				    	</div>
+				    	<div>
+				    		<p>更多精选</p>
+				    		<div><a href="#">合作招商</a></div>
+				    		<div><a href="#">京东通信</a></div>
+				    		<div><a href="#">京东E卡</a></div>
+				    		<div><a href="#">企业采购</a></div>
+				    		<div><a href="#">服务市场</a></div>
+				    		<div><a href="#">办公生活馆</a></div>
+				    		<div><a href="#">乡村招募</a></div>
+				    		<div><a href="#">校园加盟</a></div>
+				    		<div><a href="#">京友邦</a></div>
+				    		<div><a href="#">京东社区</a></div>
+				    		<div><a href="#">智能社区</a></div>
+				    		<div><a href="#">游戏社区</a></div>
+				    		<div><a href="#">知识产权维护</a></div>
+				    		<div><a href="#">在线读书</a></div>
+				    	</div>
+				    </div>
+				</li>
+				<li><a href="#">手机京东</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="logo">
+		<a class="logo-1" href="#"></a>
+		<a class="logo-2" href="#">购物车</a>
+		<div class="logo-3">
+		    <input type="text" placeholder="自营">
+			<a href="#">搜索</a>
+		</div>
+	</div>
+	<!-- 小导航 -->
+	<div id="nav">
+		<div class="nav-1">
+			<a href="#">全部商品4</a>
+			<a href="#">京东大药房</a>
+		</div>
+		<div class="nav-2">
+			配送至：
+			<a href="#">背景朝阳区三环以内&nbsp;∨</a>
+		</div>
+	</div>
+	<!-- 购物车商品 -->
+	<div id="somethimg">
+		<div class="something-1">
+			<label>
+				<input type="checkbox">
+				<span>全选</span>
+			</label>
+			<span>商品</span>
+			<span></span>
+			<span>单价</span>
+			<span>数量</span>
+			<span>小计</span>
+			<span>操作</span>
+		</div>
+		<div class="something-2">
+			<div class="something-2-1">
+				<!-- <label>
+					<input type="checkbox">
+					<span>京东自营</span>
+				</label>
+				<span>以免运费</span> -->
+			</div>
+			<div class="something-3">
+				<div class="something-3-21">
+					<div class="something-3-1-1">
+						<div class="something-3-1-1-1">
+							<span>满赠<span></span></span>
+							<a href="#">活动商品购满2件，即可领取赠品1件 ></a>
+							<a href="#">查看赠品</a>
+							<a href="#">去凑单 ></a>
+						</div>
+						<div class="something-3-1-1-2">￥49.90</div>
+					</div>
+					<div class="something-3-2">
+						<div class="something-3-2-1">
+							<input type="checkbox">
+							<span></span>
+							<div class="something-3-2-1-1">
+								<a href="#"><img src="./imgs/56de26f9N55174aa1.jpg" alt=""></a>
+								<div class="something-3-2-1-1-1">
+									<a href="#">【京东超市】福临门 东北优质 大米 8kg</a>
+									<p><span></span>不支持7天无理由退货</p>
+								</div>
+							</div>
+							<div class="something-3-2-1-2"><p>颜色：福临门东北优质8kg</p></div>
+							<div class="something-3-2-1-3">
+								<p>￥<span>49.90</span></p>
+								<a href="#">更多促销&nbsp;∨</a>
+							</div>
+							<div class="something-3-2-1-4">
+								<div>
+									<span>1</span>
+									<a class="minus" href="javascript:;">-</a>
+									<a class="prep" href="javascript:;">+</a>
+								</div>
+								<p>有货</p>
+							</div>
+							<div class="something-3-2-1-5">
+								<b>￥<span class="shopPrice">49.90</span></b><br>
+								<span>8.07kg</span>
+							</div>
+							<div class="something-3-2-1-6">
+								<a class="delete" href="javascript:;">删除</a><br>
+								<a href="#">移到我的关注</a><br>
+								<a href="#">加到我的关注</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="something-3-20">
+					<div class="something-3-1">
+						<div class="something-3-1-1">
+							<div class="something-3-1-1-1">
+								<span>换购<span></span></span>
+								<a href="#"> 活动商品已购满¥20.00 ，可加价换购商品1件 ></a>
+								<a href="#">换购商品</a>
+								<a href="#">去凑单 ></a>
+							</div>
+							<div class="something-3-1-1-2">￥154.00</div>
+						</div>
+						<div class="something-3-2">
+							<div class="something-3-2-1">
+								<input type="checkbox">
+								<span></span>
+								<div class="something-3-2-1-1">
+									<a href="#"><img src="./imgs/573a7133N6a24fb0c.jpg" alt=""></a>
+									<div class="something-3-2-1-1-1">
+										<a href="#">水星（MERCURY）MW325R 300M智能wifi无线路由器增强四天线</a>
+										<p><span></span>不支持7天无理由退货</p>
+									</div>
+								</div>
+								<div class="something-3-2-1-2"><p>颜色：300M增强四天线</p></div>
+								<div class="something-3-2-1-3">
+									<p>￥<span>55.00</span></p>
+									<a href="#">更多促销&nbsp;∨</a>
+								</div>
+								<div class="something-3-2-1-4">
+									<div>
+										<span>1</span>
+										<a class="minus" href="javascript:;">-</a>
+										<a class="prep" href="javascript:;">+</a>
+									</div>
+									<p>有货</p>
+								</div>
+								<div class="something-3-2-1-5">
+									<b>￥<span class="shopPrice">55.00</span></b><br>
+									<span>0.49kg</span>
+								</div>
+								<div class="something-3-2-1-6">
+									<a class="delete" href="javascript:;">删除</a><br>
+									<a href="#">移到我的关注</a><br>
+									<a href="#">加到我的关注</a>
+								</div>
+							</div>
+						</div>
+				    </div>
+				</div>
+				<div class="something-3-21">
+					<div class="something-3-1">
+						<div class="something-3-1-1">
+							<div class="something-3-1-1-1">
+								<span>满赠<span></span></span>
+								<a href="#">活动商品购满2件，即可领取赠品1件 ></a>
+								<a href="#">查看赠品</a>
+								<a href="#">去凑单 ></a>
+							</div>
+							<div class="something-3-1-1-2">￥49.90</div>
+						</div>
+						<div class="something-3-2">
+							<div class="something-3-2-1">
+								<input type="checkbox">
+								<span></span>
+								<div class="something-3-2-1-1">
+									<a href="#"><img src="./imgs/56de26f9N55174aa1.jpg" alt=""></a>
+									<div class="something-3-2-1-1-1">
+										<a href="#">【京东超市】福临门 东北优质 大米 8kg</a>
+										<p><span></span>不支持7天无理由退货</p>
+									</div>
+								</div>
+								<div class="something-3-2-1-2"><p>颜色：福临门东北优质8kg</p></div>
+								<div class="something-3-2-1-3">
+									<p>￥<span>49.90</span></p>
+									<a href="#">更多促销&nbsp;∨</a>
+								</div>
+								<div class="something-3-2-1-4">
+									<div>
+										<span>1</span>
+										<a class="minus" href="javascript:;">-</a>
+										<a class="prep" href="javascript:;">+</a>
+									</div>
+									<p>有货</p>
+								</div>
+								<div class="something-3-2-1-5">
+									<b>￥<span class="shopPrice">49.90</span></b><br>
+									<span>8.07kg</span>
+								</div>
+								<div class="something-3-2-1-6">
+									<a class="delete" href="javascript:;">删除</a><br>
+									<a href="#">移到我的关注</a><br>
+									<a href="#">加到我的关注</a>
+								</div>
+							</div>
+						</div>
+				    </div>
+				</div>
+				<div class="something-3-20">
+					<div class="something-3-1">
+						<div class="something-3-1-1">
+							<div class="something-3-1-1-1">
+								<span>换购<span></span></span>
+								<a href="#"> 活动商品已购满¥20.00 ，可加价换购商品1件 ></a>
+								<a href="#">换购商品</a>
+								<a href="#">去凑单 ></a>
+							</div>
+							<div class="something-3-1-1-2">￥154.00</div>
+						</div>
+						<div class="something-3-2">
+							<div class="something-3-2-1">
+								<input type="checkbox">
+								<span></span>
+								<div class="something-3-2-1-1">
+									<a href="#"><img src="./imgs/573a7133N6a24fb0c.jpg" alt=""></a>
+									<div class="something-3-2-1-1-1">
+										<a href="#">水星（MERCURY）MW325R 300M智能wifi无线路由器增强四天线</a>
+										<p><span></span>不支持7天无理由退货</p>
+									</div>
+								</div>
+								<div class="something-3-2-1-2"><p>颜色：300M增强四天线</p></div>
+								<div class="something-3-2-1-3">
+									<p>￥<span>55.00</span></p>
+									<a href="#">更多促销&nbsp;∨</a>
+								</div>
+								<div class="something-3-2-1-4">
+									<div>
+										<span>1</span>
+										<a class="minus" href="javascript:;">-</a>
+										<a class="prep" href="javascript:;">+</a>
+									</div>
+									<p>有货</p>
+								</div>
+								<div class="something-3-2-1-5">
+									<b>￥<span class="shopPrice">55.00</span></b><br>
+									<span>0.49kg</span>
+								</div>
+								<div class="something-3-2-1-6">
+									<a class="delete" href="javascript:;">删除</a><br>
+									<a href="#">移到我的关注</a><br>
+									<a href="#">加到我的关注</a>
+								</div>
+							</div>
+						</div>
+				    </div>
+				</div>
+			</div>
+			<div class="something-4">
+				<div class="something-4-1">
+					<label>
+						<input type="checkbox">
+						<span>全选</span>
+					</label>
+					<a href="javascript:;">删除选中的商品</a>
+					<a href="#">移到我的关注</a>
+					<a href="#">清除下柜商品</a>
+				</div>
+				<div class="something-4-2">
+					<a href="#">去结算</a>
+					<div class="something-4-2-1">
+						<span class="something-4-2-1-1">总价：</span>
+						<span>￥<b class="allPrice">00.00</b></span>
+						<span></span>
+						<span class="something-4-2-1-1">已节省：</span>
+						<span>-￥0.00</span>
+					</div>
+					<div class="something-4-2-2">已选择<span>5</span>件商品&nbsp;∨</div>
+				</div>
+			</div>
+			<div id="suckDown" class="something-4">
+				<div>
+					<div class="something-4-1">
+						<label>
+							<input type="checkbox">
+							<span>全选</span>
+						</label>
+						<a href="javascript:;">删除选中的商品</a>
+						<a href="#">移到我的关注</a>
+						<a href="#">清除下柜商品</a>
+					</div>
+					<div class="something-4-2">
+						<a href="#">去结算</a>
+						<div class="something-4-2-1">
+							<span class="something-4-2-1-1">总价：</span>
+							<span>￥<b class="allPrice">00.00</b></span>
+							<span></span>
+							<span class="something-4-2-1-1">已节省：</span>
+							<span>-￥0.00</span>
+						</div>
+						<div class="something-4-2-2">已选择<span>5</span>件商品&nbsp;∨</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 底部轮播 -->
+	<div id="guess">
+		<div class="gusshead">
+			<a href="#">猜你喜欢</a>
+			<a href="#">随手购</a>
+			<a href="#">我的关注</a>
+			<a href="#">最近浏览</a>
+		</div>
+
+
+		<div class="gussbot">
+			<div>
+				<a href="#">
+					<img src="./imgs/573078e5N75e293d3.jpg" alt="">
+					<p>网易云音乐车载蓝牙播放器 点烟器式双USB车充 车载充电器 蓝牙FM发射器 </p>
+					<p>￥119.00</p>
+					<div class="gussbot-1">
+						<button href="#"><span></span>加入购物车</button>
+					</div>
+				</a>
+			</div>
+			<div>
+				<a href="#">
+					<img src="./imgs/5943304dNeb81efcf.jpg" alt="">
+					<p>奥克斯（AUX）正1.5匹 冷暖 定速 空调挂机(KFR-35GW/HFJ+3)</p>
+					<p>￥2099.00</p>
+					<div class="gussbot-1">
+						<button href="#"><span></span>加入购物车</button>
+					</div>
+				</a>
+			</div>
+			<div>
+				<a href="#">
+					<img src="./imgs/597325e1N8f7f61bd.jpg" alt="">
+					<p>三只松鼠_夏威夷果265gx2袋零食坚果炒货干果奶油味送开口器</p>
+					<p>￥46.90</p>
+					<div class="gussbot-1">
+						<button href="#"><span></span>加入购物车</button>
+					</div>
+				</a>
+			</div>
+			<div>
+				<a href="#">
+					<img src="./imgs/56de26f9N55174aa1 (1).jpg" alt="">
+					<p>【京东超市】福临门 东北优质 大米 8kg</p>
+					<p>￥49.90</p>
+					<div class="gussbot-1">
+						<button href="#"><span></span>加入购物车</button>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- 右侧fixed -->
+	<div id="right">
+		<div class="righttop">
+			<div class="righttop-1">
+				<a href="javascript:;">
+					<span></span>
+					<div>京东会员</div>
+				</a>
+			</div>
+			<div class="righttop-2">
+				<a href="">
+					<span></span>
+					<div>购物车</div>
+				</a>
+			</div>
+			<div class="righttop-3">
+				<a href="">
+					<span></span>
+					<div>我的关注</div>
+				</a>
+			</div>
+			<div class="righttop-4">
+				<a href="">
+					<span></span>
+					<div>我的足迹</div>
+				</a>
+			</div>
+			<div class="righttop-5">
+				<a href="">
+					<span></span>
+					<div>我的消息</div>
+				</a>
+			</div>
+			<div class="righttop-6">
+				<a href="">
+					<span></span>
+					<div>咨询JIMI</div>
+				</a>
+			</div>
+		</div>
+		<div class="rightbot">
+			<div id="rightBotTop" class="rightbot-1">
+				<a href="javascript:;">
+					<span></span>
+					<div>顶部</div>
+				</a>
+			</div>
+			<div class="rightbot-2">
+				<a href="#">
+					<span></span>
+					<div>反馈</div>
+				</a>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+	<!-- 登录 -->
+	<div id="log">
+		<div class="log">
+			<div id="logTop"><span>您尚未登录</span><span id="cha">×</span></div>
+			<div id="logBot">
+				<a class="abg" href="#">扫码登录</a>
+				<a href="#">账户登录</a>
+				<div class="ma">
+					<div class="ma1">
+						<span><img src="./imgs/show.png" alt=""></span>
+						<img src="./imgs/phone-orange.png" alt="">
+					</div>
+					<p>打开<a href="#">手机京东</a>&nbsp;&nbsp;扫描二维码</p>
+					<div class="ma2">
+						<a href="#"><img src="./imgs/qq.jpg" alt="">QQ</a>
+						<a href="#"><img src="./imgs/weixin.jpg" alt="">微信</a>
+						<a href="#"><img src="./imgs/reg.jpg" alt="">立即注册</a>
+					</div>
+				</div>
+				<div class="ma"></div>
+			</div>
+		</div>
+	</div>
+	<!-- 底部 -->
+	<div id="footer">
+		<div class="fottop">
+			<div>
+				<div class="fottop-1">
+					<span></span>
+					<p>品类齐全，轻松购物</p>
+				</div>
+				<div class="fottop-1">
+					<span></span>
+					<p>多仓直发，极速配送</p>
+				</div>
+				<div class="fottop-1">
+					<span></span>
+					<p>正品行货，精致服务</p>
+				</div>
+				<div class="fottop-1">
+					<span></span>
+					<p>天天低价，畅选无忧</p>
+				</div>
+			</div>
+		</div>
+		<div class="fotcenter">
+			<div>
+				<div class="fotcenter-1">
+					<h5>购物指南</h5>
+					<a href="#">购物流程</a>
+					<a href="#">会员介绍</a>
+					<a href="#">生活旅行</a>
+					<a href="#">常见问题</a>
+					<a href="#">大家电</a>
+					<a href="#">联系客服</a>
+				</div>
+				<div class="fotcenter-1">
+					<h5>配送方式</h5>
+					<a href="#">上门自提</a>
+					<a href="#">211限时达</a>
+					<a href="#">配送服务查询</a>
+					<a href="#">配送费收取标准</a>
+					<a href="#">海外配送</a>
+				</div>
+				<div class="fotcenter-1">
+					<h5>支付方式</h5>
+					<a href="#">货到付款</a>
+					<a href="#">在线支付</a>
+					<a href="#">分期付款</a>
+					<a href="#">邮局汇款</a>
+					<a href="#">公司转账</a>
+				</div>
+				<div class="fotcenter-1">
+					<h5>售后服务</h5>
+					<a href="#">售后政策</a>
+					<a href="#">价格保护</a>
+					<a href="#">退款说明</a>
+					<a href="#">返修/退换货</a>
+					<a href="#">取消订单</a>
+				</div>
+				<div class="fotcenter-1">
+					<h5>特色服务</h5>
+					<a href="#">夺宝岛</a>
+					<a href="#">DIY装机</a>
+					<a href="#">延保服务</a>
+					<a href="#">京东E卡</a>
+					<a href="#">京东通信</a>
+					<a href="#">京东JD+</a>
+				</div>
+				<div class="fotcenter-2">
+					<h5>京东自营覆盖区县</h5>
+					<p>京东已向全国2661个区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。</p>
+					<a href="#">查看详情&nbsp;></a>
+				</div>
+			</div>
+		</div>
+		<div class="fotbottom">
+			<div>
+				<p class="fotbottom-1">
+					<a href="#">关于我们</a>
+					<a href="#">联系我们</a>
+					<a href="#">联系客服</a>
+					<a href="#">合作招商</a>
+					<a href="#">商家帮助</a>
+					<a href="#">营销中心</a>
+					<a href="#">手机京东</a>
+					<a href="#">友情链接</a>
+					<a href="#">销售联盟</a>
+					<a href="#">京东社区</a>
+					<a href="#">风险监测</a>
+					<a href="#">隐私政策</a>
+					<a href="#">京东公益</a>
+					<a href="#">English Site</a>
+					<a href="#">Media & IR</a>
+				</p>
+				<div class="fotbottom-2">
+					<p>京公网安备 11000002000088号&nbsp;&nbsp;|&nbsp;&nbsp;京ICP证070359号&nbsp;&nbsp;|&nbsp;&nbsp;互联网药品信息服务资格证编号(京)-经营性-2014-0008&nbsp;&nbsp;|&nbsp;&nbsp;新出发京零 字第大120007号</p>
+					<p>互联网出版许可证编号新出网证(京)字150号&nbsp;&nbsp;|&nbsp;&nbsp;出版物经营许可证|网络文化经营许可证京网文[2014]2148-348号&nbsp;&nbsp;|&nbsp;&nbsp;违法和不良信息举报电话：4006561155</p>
+					<p>Copyright © 2004 - 2017  京东JD.com 版权所有&nbsp;&nbsp;|&nbsp;&nbsp;消费者维权热线：4006067733经营证照</p>
+					<p>京东旗下网站：京东支付&nbsp;&nbsp;|&nbsp;&nbsp;京东云</p>
+				</div>
+				<p class="fotbottom-3">
+					<a href="#"></a>
+					<a href="#"></a>
+					<a href="#"></a>
+					<a href="#"></a>
+					<a href="#"></a>
+					<a href="#"></a>
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
